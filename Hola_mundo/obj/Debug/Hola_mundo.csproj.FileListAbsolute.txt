@@ -1,0 +1,13 @@
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\bin\Debug\Hola_mundo.exe.config
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\bin\Debug\Hola_mundo.exe
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\bin\Debug\Hola_mundo.pdb
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\bin\Debug\OpenTK.dll
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\bin\Debug\OpenTK.pdb
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\bin\Debug\OpenTK.xml
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.csprojAssemblyReference.cache
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.Properties.Resources.resources
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.csproj.GenerateResource.cache
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.csproj.CoreCompileInputs.cache
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.csproj.CopyComplete
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.exe
+G:\9no semestre\Grafica\proyectos\Hola_mundo\Hola_mundo\obj\Debug\Hola_mundo.pdb
