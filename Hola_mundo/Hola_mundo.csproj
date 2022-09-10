@@ -50,6 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="models\Game.cs" />
+    <Compile Include="models\IObject.cs" />
+    <Compile Include="models\Point.cs" />
+    <Compile Include="models\Triangle .cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="shaders\Shader.cs" />

@@ -13,7 +13,8 @@ using OpenTK.Input;
 namespace Hola_mundo.models
 {
     public class Game : GameWindow
-    {
+    {    
+        /*
         private float[] vertices = {
             -0.5f, -0.5f, 0.0f, //Bottom-left vertex
              0.5f, -0.5f, 0.0f, //Bottom-right vertex
@@ -21,9 +22,12 @@ namespace Hola_mundo.models
         };
         int VertexBufferObject; // id VertexBufferObject
         int VertexArrayObject; //      VAO
-        
+        */
         // shaders
         Shader shader;
+        Triangle t1;
+        Triangle t2;
+        Triangle t3;
 
         public Game(int width, int height, string title) : base(width, height, GraphicsMode.Default, title)
         {
@@ -43,10 +47,15 @@ namespace Hola_mundo.models
         protected override void OnLoad(EventArgs e)
         {
             GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+
+            t1 = new Triangle(new Point(0.5f, 0.5f, 0.5f), 0.5f, 0.5f, 0.5f, 1f);
+            t2 = new Triangle(new Point(-0.5f, -0.5f, 0.5f), 0.5f, 0.5f, 0.5f, 0.5f);
+            t3 = new Triangle(new Point(-0.5f, 0.5f, 0.5f), 0.5f, 0.5f, 0.5f, 0.7f);
+            /*
             VertexBufferObject = GL.GenBuffer();
             shader = new Shader("shader.vert", "shader.frag");
             VertexArrayObject = GL.GenVertexArray();
-
+            
             // 1. bind Vertex Array Object
             GL.BindVertexArray(VertexArrayObject);
             // 2. copy our vertices array in a buffer for OpenGL to use
@@ -55,7 +64,7 @@ namespace Hola_mundo.models
             // 3. then set our vertex attributes pointers
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
-
+            */
             base.OnLoad(e);
         }
         protected override void OnRenderFrame(FrameEventArgs e)
@@ -63,10 +72,13 @@ namespace Hola_mundo.models
             GL.Clear(ClearBufferMask.ColorBufferBit);
 
             //Code goes here.
-            shader.Use();
+            //shader.Use();
+            this.t1.draw();
+            this.t2.draw();
+            this.t3.draw();
+            /*
             GL.BindVertexArray(VertexArrayObject);
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
-
+            GL.DrawArrays(PrimitiveType.Triangles, 0, 3); */
             Context.SwapBuffers();
             base.OnRenderFrame(e);
         }
@@ -76,10 +88,10 @@ namespace Hola_mundo.models
             base.OnResize(e);
         }
         protected override void OnUnload(EventArgs e)
-        {
+        {   //clear buffer
             GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
-            GL.DeleteBuffer(VertexBufferObject);
-            shader.Dispose();
+            //GL.DeleteBuffer(VertexBufferObject);
+            //shader.Dispose();
             base.OnUnload(e);
         }
     }

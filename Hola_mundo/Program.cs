@@ -12,7 +12,7 @@ namespace Hola_mundo
 
         static void Main()
         {
-            Game game = new Game(800, 600, "Hellow World");
+            Game game = new Game(800, 600, "Hellow World Triangle");
         }
     }
 }
